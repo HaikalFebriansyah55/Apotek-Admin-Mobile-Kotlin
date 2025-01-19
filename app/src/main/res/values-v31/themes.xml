@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema untuk Splash Screen -->
+    <style name="Theme.MySplashScreen" parent="Theme.UAS_2">
+        <!-- Warna latar belakang splash screen -->
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <!-- Ikon yang ditampilkan di splash screen -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/icon_with_padding</item>
+        <!-- Tema yang digunakan setelah splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.UAS_2</item>
+    </style>
+
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.UAS_2" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Tambahkan atribut tema lainnya jika diperlukan -->
+    </style>
+</resources>

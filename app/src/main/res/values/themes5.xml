@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MySplashScreen" parent="Theme.UAS_2">
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon"></item>
+    </style>
+    <style name="Theme.UAS_2" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

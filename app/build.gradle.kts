@@ -1,6 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.dagger.hilt.android")
+    alias(libs.plugins.google.gms.google.services)
+    id("com.google.devtools.ksp")
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -47,6 +52,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "35.0.0"
 }
 
 dependencies {
@@ -59,6 +65,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -78,4 +85,8 @@ dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("io.coil-kt:coil-compose:2.4.0")
     implementation("androidx.compose.runtime:runtime-livedata:1.7.6")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation ("com.google.dagger:hilt-android:2.48.1")
+    kapt ("com.google.dagger:hilt-compiler:2.48.1")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 }
